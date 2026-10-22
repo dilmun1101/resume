@@ -1,5 +1,6 @@
 import MenuLink from '@/components/MenuLink/MenuLink';
 import { paths } from '@/router/paths';
+import { useTranslation } from 'react-i18next';
 
 const menuLinks = [
   { name: 'projects', to: paths.projects },
@@ -7,12 +8,14 @@ const menuLinks = [
 ];
 
 function HeaderLinks() {
+  const { t } = useTranslation();
+
   return (
     <nav>
       <ul>
         {menuLinks.map(({ name, to }) => (
           <li key={name}>
-            <MenuLink to={to} text={name} />
+            <MenuLink to={to} text={t(`header.${name}`)} />
           </li>
         ))}
       </ul>
