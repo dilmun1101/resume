@@ -25,18 +25,18 @@ function Card({
   const { t } = useTranslation();
 
   return (
-    <div key={id} id={id} className={classNames(styles.container, className)}>
+    <div id={id} className={classNames(styles.container, className)}>
       <h3>{name}</h3>
       <img className={styles.image} src={image} alt={alt} />
       <ul className={styles.list}>
         <li className={styles.item}>
           <a className={styles.link} href={githubURL}>
-            {t('card.liveDemo')}
+            {t('card.github')}
           </a>
         </li>
         <li className={styles.item}>
           <a className={styles.link} href={deployURL}>
-            {t('card.github')}
+            {t('card.liveDemo')}
           </a>
         </li>
         <li className={styles.item}>
