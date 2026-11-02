@@ -1,0 +1,11 @@
+{
+  "header": {
+    "projects": "projects",
+    "cv": "CV"
+  },
+  "card": {
+    "description": "description",
+    "github": "github",
+    "liveDemo": "live demo"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "header": {
+    "projects": "проекты",
+    "cv": "резюме"
+  },
+  "card": {
+    "description": "oписание",
+    "github": "гитхаб",
+    "liveDemo": "открыть проект"
+  }
+}
