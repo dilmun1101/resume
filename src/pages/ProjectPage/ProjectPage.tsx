@@ -1,9 +1,10 @@
 import ProjectList from '@/components/ProjectList/ProjectList';
+import AboutMeSection from '@/components/AboutMeSection/AboutMeSection';
 
 function ProjectPage() {
   return (
     <>
-      <h1>Project page</h1>
+      <AboutMeSection />
       <ProjectList />
     </>
   );
