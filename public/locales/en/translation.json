@@ -7,5 +7,6 @@
     "description": "description",
     "github": "github",
     "liveDemo": "live demo"
-  }
+  },
+  "about-me": "init: decide to build a 'simple website'\nfeat: discover an entire profession\nfix: remove one bug, meet two new ones\nrefactor: understand code written a week ago\ndocs: explain a solution without using the word 'magic'\nfeat: keep going because it's interesting"
 }
