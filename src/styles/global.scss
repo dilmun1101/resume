@@ -1,0 +1,12 @@
+@use './tokens/tokens.scss' as v;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: v.$bg-color;
+  color: v.$text-secondary-color;
+}
