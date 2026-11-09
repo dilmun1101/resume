@@ -1,0 +1,17 @@
+@use 'styles/tokens/tokens.scss' as v;
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.title {
+  font-size: 44px;
+  text-transform: capitalize;
+  color: v.$text-accent-color;
+}
+
+.description {
+  font-size: 22px;
+}

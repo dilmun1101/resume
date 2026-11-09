@@ -6,10 +6,11 @@
 
 .header {
   max-width: v.$width-lg;
+  min-height: 60px;
   display: flex;
   align-items: center;
   justify-content: end;
   gap: v.$size-3;
-  padding: v.$size-3 v.$size-1;
+  padding-inline: v.$size-1;
   margin-inline: auto;
 }
