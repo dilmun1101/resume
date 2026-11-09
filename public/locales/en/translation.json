@@ -20,5 +20,9 @@
       },
       { "type": "feat", "text": "keep going because it's interesting" }
     ]
+  },
+  "hero": {
+    "title": "Anna Nitsevich",
+    "description": "Frontend developer"
   }
 }
