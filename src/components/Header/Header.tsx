@@ -1,6 +1,6 @@
 import classNames from 'classnames';
 import HeaderLinks from './components/HeaderLinks/HeaderLinks';
-import LanguageSwitcher from './components/LangugesSwitcher/LangugesSwitcher';
+import LanguageSwitcher from './components/LanguagesSwitcher/LanguagesSwitcher';
 import styles from './header.module.scss';
 
 interface Props {
