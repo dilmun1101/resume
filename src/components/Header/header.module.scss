@@ -1,0 +1,15 @@
+@use 'styles/tokens/tokens.scss' as v;
+
+.container {
+  border-bottom: 2px solid v.$border-color;
+}
+
+.header {
+  max-width: v.$width-lg;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: v.$size-3;
+  padding: v.$size-3 v.$size-1;
+  margin-inline: auto;
+}
