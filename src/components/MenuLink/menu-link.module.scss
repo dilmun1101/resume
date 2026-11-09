@@ -1,0 +1,15 @@
+@use 'styles/tokens/tokens.scss' as v;
+
+.link {
+  text-decoration: none;
+  color: v.$text-primary-color;
+  transition: 1.2s;
+
+  &:hover {
+    color: v.$text-secondary-color;
+  }
+}
+
+.active {
+  color: v.$text-accent-color;
+}
