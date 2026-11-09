@@ -26,7 +26,7 @@ function Card({
 
   return (
     <div id={id} className={classNames(styles.container, className)}>
-      <h3>{name}</h3>
+      <h3 className={styles.title}>{name}</h3>
       <img className={styles.image} src={image} alt={alt} />
       <ul className={styles.list}>
         <li className={styles.item}>

@@ -1,0 +1,16 @@
+@use 'styles/tokens/tokens.scss' as v;
+@use 'styles/mixins/mixins' as m;
+
+.list {
+  @include m.resetListStyles;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: v.$size-2;
+  padding: v.$size-3 v.$size-1;
+}
+
+.type {
+  color: v.$text-accent-color;
+}

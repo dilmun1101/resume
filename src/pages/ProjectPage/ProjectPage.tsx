@@ -1,5 +1,5 @@
 import ProjectList from '@/components/ProjectList/ProjectList';
-import AboutMeSection from '@/components/AboutMeSection/AboutMeSection';
+import AboutMeSection from '@/components/AboutMe/AboutMe';
 
 function ProjectPage() {
   return (

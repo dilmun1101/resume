@@ -1,0 +1,50 @@
+@use 'styles/tokens/tokens' as v;
+@use 'styles/mixins/mixins' as m;
+
+.container {
+  max-width: v.$card-max-width;
+  display: grid;
+  grid-row: span 3;
+  grid-template-rows: subgrid;
+  row-gap: v.$size-2;
+  padding: v.$size-2;
+  background: v.$card-bg-color;
+  border: v.$border-thin;
+  border-radius: 20px;
+  transition: v.$transition;
+
+  &:hover {
+    border-color: v.$border-accent-color;
+  }
+}
+
+.title {
+  text-transform: uppercase;
+  color: v.$text-primary-color;
+}
+
+.image {
+  width: 100%;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+}
+
+.list {
+  @include m.resetListStyles;
+  display: flex;
+  flex-direction: column;
+  gap: v.$size-2;
+}
+
+.link {
+  text-decoration: none;
+  color: v.$text-primary-color;
+  text-transform: capitalize;
+  font-size: 12px;
+  letter-spacing: 1px;
+  transition: v.$transition;
+
+  &:hover {
+    color: v.$text-accent-color;
+  }
+}

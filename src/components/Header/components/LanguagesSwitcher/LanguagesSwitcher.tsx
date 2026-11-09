@@ -22,6 +22,8 @@ function LanguageSwitcher({ className }: Props) {
           text={language}
           lang={language}
           onClick={() => switchLanguage(language)}
+          variant="secondary"
+          active={i18n.language === language}
         />
       ))}
     </div>

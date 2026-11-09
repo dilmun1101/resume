@@ -1,0 +1,7 @@
+@use 'styles/tokens/tokens' as v;
+
+.main {
+  max-width: v.$width-lg;
+  padding-inline: v.$size-1;
+  margin-inline: auto;
+}
