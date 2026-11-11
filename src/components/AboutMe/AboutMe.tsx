@@ -1,14 +1,29 @@
 import styles from './about-me.module.scss';
 import { useTranslation } from 'react-i18next';
 import classNames from 'classnames';
+import { useReveal } from '@/utils/hooks/useReveal';
 
 interface AboutItem {
+  id: string;
   type: string;
   text: string;
 }
 
 interface Props {
   className?: string;
+}
+
+function AboutLine({ type, text }: AboutItem) {
+  const { ref, isVisible } = useReveal<HTMLLIElement>();
+
+  return (
+    <li
+      ref={ref}
+      className={classNames(styles.text, isVisible && styles.visible)}
+    >
+      <span className={styles.type}>{type}:</span> {text}
+    </li>
+  );
 }
 
 function AboutMe({ className }: Props) {
@@ -19,9 +34,7 @@ function AboutMe({ className }: Props) {
   return (
     <ul className={classNames(styles.list, className)}>
       {items.map((item) => (
-        <li key={item.text} className={styles.text}>
-          <span className={styles.type}>{item.type}:</span> {item.text}
-        </li>
+        <AboutLine key={item.id} {...item} />
       ))}
     </ul>
   );
