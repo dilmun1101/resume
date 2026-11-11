@@ -10,15 +10,28 @@
   },
   "aboutMe": {
     "items": [
-      { "type": "init", "text": "decide to build a 'simple website'" },
-      { "type": "feat", "text": "discover an entire profession" },
-      { "type": "fix", "text": "remove one bug, meet two new ones" },
-      { "type": "refactor", "text": "understand code written a week ago" },
       {
+        "id": "1",
+        "type": "init",
+        "text": "decide to build a 'simple website'"
+      },
+      { "id": "2", "type": "feat", "text": "discover an entire profession" },
+      { "id": "3", "type": "fix", "text": "remove one bug, meet two new ones" },
+      {
+        "id": "4",
+        "type": "refactor",
+        "text": "understand code written a week ago"
+      },
+      {
+        "id": "5",
         "type": "docs",
         "text": "explain a solution without using the word 'magic'"
       },
-      { "type": "feat", "text": "keep going because it's interesting" }
+      {
+        "id": "6",
+        "type": "feat",
+        "text": "keep going because it's interesting"
+      }
     ]
   },
   "hero": {
