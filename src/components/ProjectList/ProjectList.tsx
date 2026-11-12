@@ -20,7 +20,7 @@ function ProjectList({ className }: Props) {
           key={item.id}
           id={item.id}
           name={item.name}
-          image={item['image-path']}
+          image={item.imagePath}
           alt={item.name}
           githubURL={item.githubURL.url}
           deployURL={item.deployURL[language] ?? item.deployURL.en}
