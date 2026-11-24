@@ -19,7 +19,7 @@ function FilterProjects({ tags, selectedTag, onSelect, className }: Props) {
         <Button
           key={tag}
           text={tag}
-          aria-pressed={selectedTag === tag}
+          className={classNames(selectedTag === tag && styles.active)}
           onClick={() => onSelect(tag)}
         />
       ))}
