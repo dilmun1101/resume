@@ -1,0 +1,12 @@
+@use 'styles/tokens/tokens.scss' as v;
+@use 'styles/mixins/mixins' as m;
+
+.list {
+  @include m.resetListStyles;
+  display: flex;
+  gap: v.$size-2;
+}
+
+.item {
+  text-transform: uppercase;
+}

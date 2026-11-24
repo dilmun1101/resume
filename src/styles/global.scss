@@ -1,0 +1,15 @@
+@use './tokens/tokens.scss' as v;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Redaction 20', serif;
+  font-weight: 400;
+  font-style: normal;
+  background: v.$bg-color;
+  color: v.$text-secondary-color;
+}

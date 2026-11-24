@@ -1,0 +1,34 @@
+@use 'styles/tokens/tokens.scss' as v;
+
+.button {
+  border: none;
+  cursor: pointer;
+}
+
+.primary {
+  text-transform: uppercase;
+  padding: v.$size-2;
+  border: 2px solid v.$border-accent-color;
+  border-radius: 15px;
+  background-color: transparent;
+  color: v.$text-secondary-color;
+
+  &.active {
+    background: v.$text-accent-color;
+    color: v.$text-primary-color;
+  }
+}
+
+.secondary {
+  text-transform: uppercase;
+  padding: v.$size-1;
+  border: 2px solid v.$border-accent-color;
+  border-radius: 50%;
+  background-color: transparent;
+  color: v.$text-secondary-color;
+
+  &.active {
+    background: v.$text-accent-color;
+    color: v.$text-primary-color;
+  }
+}

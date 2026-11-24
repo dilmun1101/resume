@@ -1,0 +1,9 @@
+@use 'styles/tokens/tokens.scss' as v;
+
+.container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, v.$card-max-width));
+  gap: v.$size-5;
+  padding: v.$size-3 0 v.$size-5;
+}

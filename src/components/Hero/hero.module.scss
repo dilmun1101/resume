@@ -1,0 +1,8 @@
+@use 'styles/tokens/tokens.scss' as v;
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100dvh - 80px);
+}
