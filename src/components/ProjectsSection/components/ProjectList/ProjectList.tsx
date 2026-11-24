@@ -1,14 +1,15 @@
 import styles from './project-list.module.scss';
-import { projects } from '@/data/projects';
-import Card from '../Card/Card';
+import type { Project } from '@/data/projects';
+import Card from '@/components/Card/Card';
 import { useTranslation } from 'react-i18next';
 import classNames from 'classnames';
 
 interface Props {
+  projects: Project[];
   className?: string;
 }
 
-function ProjectList({ className }: Props) {
+function ProjectList({ projects, className }: Props) {
   const { i18n } = useTranslation();
 
   const language = i18n.resolvedLanguage === 'ru' ? 'ru' : 'en';
@@ -20,7 +21,7 @@ function ProjectList({ className }: Props) {
           key={item.id}
           id={item.id}
           name={item.name}
-          image={item['image-path']}
+          image={item.imagePath}
           alt={item.name}
           githubURL={item.githubURL.url}
           deployURL={item.deployURL[language] ?? item.deployURL.en}

@@ -1,8 +1,20 @@
-export const projects = [
+export interface Project {
+  id: string;
+  name: string;
+  imagePath: string;
+  githubURL: { url: string };
+  deployURL: {
+    ru?: string;
+    en: string;
+  };
+  tags: string[];
+}
+
+export const projects: Project[] = [
   {
     id: '01',
     name: 'Swagger editor app',
-    'image-path': './images/swagger-editor-app/01.png',
+    imagePath: './images/swagger-editor-app/01.png',
     githubURL: {
       url: 'https://github.com/dilmun1101/swagger-editor-app',
     },
@@ -15,7 +27,7 @@ export const projects = [
   {
     id: '02',
     name: 'Rss tandem app',
-    'image-path': './images/rss-tandem-app/01.png',
+    imagePath: './images/rss-tandem-app/01.png',
     githubURL: {
       url: 'https://github.com/dilmun1101/rss-tandem-app',
     },

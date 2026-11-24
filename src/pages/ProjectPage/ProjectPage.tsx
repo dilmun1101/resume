@@ -1,14 +1,21 @@
-import ProjectList from '@/components/ProjectList/ProjectList';
 import AboutMeSection from '@/components/AboutMe/AboutMe';
 import Hero from '@/components/Hero/Hero';
+import ProjectsSection from '@/components/ProjectsSection/ProjectsSection';
+import { projects } from '@/data/projects';
+import classNames from 'classnames';
+import styles from './project-page.module.scss';
 
-function ProjectPage() {
+interface Props {
+  className?: string;
+}
+
+function ProjectPage({ className }: Props) {
   return (
-    <>
+    <div className={classNames(styles.container, className)}>
       <Hero />
       <AboutMeSection />
-      <ProjectList />
-    </>
+      <ProjectsSection projects={projects} isFilterActive />
+    </div>
   );
 }
 

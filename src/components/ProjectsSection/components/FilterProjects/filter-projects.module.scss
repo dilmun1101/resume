@@ -1,0 +1,14 @@
+@use 'styles/tokens/tokens.scss' as v;
+
+.container {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: v.$size-2;
+  padding: v.$size-3;
+
+  .active {
+    color: v.$text-accent-color;
+    border-color: v.$border-accent-color;
+  }
+}
